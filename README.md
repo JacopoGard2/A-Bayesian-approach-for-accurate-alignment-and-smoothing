@@ -5,7 +5,7 @@ R implementation of the Bayesian functional alignment model for amplitude and ph
 
 This code implements 4 models in total for smoothing and alignment of
 functional data. The models are those of Telesca and Inoue (2012), Gardella
-et al. (2026), and 2 additional models given by combining the smoothing and
+et al. (2026) and 2 additional models given by combining the smoothing and
 warping components of the two. The parameters that select the model are
 `WARP` and `SMOOT`.
 
