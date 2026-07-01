@@ -3952,8 +3952,6 @@ List fda_smooth_and_warp_group(Rcpp::List params)
     int n_knots_gamma = get_or_default<int>(params, "n_knots_gamma", 3);
     int n_knots_phi   = get_or_default<int>(params, "n_knots_phi", 6);
 
-    Nullable<arma::vec> n_knots_phi_vec = get_nullable<arma::vec>(params, "n_knots_phi_vec");
-
     Nullable<arma::vec> beta0  = get_nullable<arma::vec>(params, "beta0");
     Nullable<arma::vec> gamma0 = get_nullable<arma::vec>(params, "gamma0");
 
@@ -4000,8 +3998,7 @@ List fda_smooth_and_warp_group(Rcpp::List params)
     Nullable<arma::mat> zeta_0 = get_nullable<arma::mat>(params, "zeta_0");
     double zeta_0_coeff = get_or_default<double>(params, "zeta_0_coeff", 0.001);
 
-    Nullable<double> sd0         = get_nullable<double>(params, "sd0");
-    Nullable<arma::vec> sd0_land = get_nullable<arma::vec>(params, "sd0_land");
+    Nullable<double> sd0         = get_nullable<double>(params, "sd0"); 
     double sd_min       = get_or_default<double>(params, "sd_min", 0.01);
     double sd_max       = get_or_default<double>(params, "sd_max", 1.0);
     double target_alpha = get_or_default<double>(params, "target_alpha", 0.234);
