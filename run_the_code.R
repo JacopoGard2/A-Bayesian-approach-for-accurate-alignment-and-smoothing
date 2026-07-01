@@ -110,9 +110,9 @@ params <- list(
 #########################
 # Run the model 
 #########################
-Rcpp::sourceCpp("JARA_code.cpp")
+Rcpp::sourceCpp("fda_smooth_and_warp_code.cpp")
 set.seed(1)
-result <- JARA_warping_GROUP(params)
+result <- fda_smooth_and_warp_group(params)
 
 #########################
 # Plot the results
